@@ -224,6 +224,33 @@ select:-webkit-autofill:focus {
   text-align: center;
 }
 
+.button{
+  display: inline-block;
+  padding: 16px 32px;
+  font-size: 12px;
+  letter-spacing: 2px;
+  line-height: normal;
+  text-transform: uppercase;
+  border:1px solid var(--grey-blue);
+  background-color: transparent;
+  color: var(--grey-blue);
+  cursor: pointer;
+}
+
+.button:hover{
+  background-color:var(--grey-blue);
+  color: var(--light-grey);
+}
+
+.button:active{
+  opacity: 0.6;
+}
+
+.button:disabled{
+  pointer-events: none;
+  opacity: 0.2;
+}
+
 /* SITENAV */
 .sitenav__list {
   margin: 0;
