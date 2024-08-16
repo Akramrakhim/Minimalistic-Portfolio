@@ -90,7 +90,7 @@ body{
   font-weight: 400;
   line-height: 30px;
   font-family: var(--body-font-family);
-  background-color:#fff;
+  background-color:var(--light-grey);
   color: var(--grey-blue);
 }
 
@@ -337,6 +337,31 @@ select:-webkit-autofill:focus {
   flex-grow: 1;
 }
 
+/* HERO */
+.hero {
+  margin-bottom: 96px;
+}
+
+.hero__img {
+  display: block;
+  width: 100%;
+  height: 271px;
+  object-fit: cover;
+  object-position: center top;
+  margin-bottom: 24px;
+}
+
+.hero__heading {
+  margin-top: 0;
+  margin-bottom: 24px;
+  padding: 0;
+  font-family: var(--accent-font-family);
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: -0.36px;
+  color: var(--grey-blue);
+}
 
 
 /* SITE FOOTER */
@@ -358,10 +383,6 @@ select:-webkit-autofill:focus {
 .site-footer__sitenav {
   margin-bottom: 40px;
 }
-
-/* .sitenav__list--site-footer{
-  flex-direction: column;
-} */
 
 
 /* SOCIALS */
@@ -406,8 +427,15 @@ only screen and (        min-device-pixel-ratio: 2),
 only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) { 
   
+}
 
 
+
+
+@media only screen and (min-width:500px){
+  .hero__img{
+    height: 600px;
+  }
 }
 
 @media only screen and (min-width:700px){
@@ -493,8 +521,49 @@ only screen and (                min-resolution: 2dppx) {
     opacity: 0.8;
   }
 
+  .hero__container{
+    position: relative;
+    z-index: 1;
+  }
+
+  .hero__img  {
+    margin-bottom: 0;
+  }
+
+  .hero__text-wrapper{
+    position: absolute;
+    left: 40px;
+    bottom: 0;
+    z-index: 1;
+    width: 514px;
+    padding-right: 56px;
+    padding-top: 56px;
+    background-color: var(--light-grey);
+  }
+
+  .hero__heading{
+    margin-bottom: 48px;
+  }
+
 }
 
+@media only screen and (min-width:1024px){
+  .hero{
+    margin-bottom: 150px;
+  }
+
+  .hero__text-wrapper{
+    width: 445px;
+    padding-right: 65px;
+  }
+
+  .hero__heading{
+    margin-bottom: 56px;
+    font-size: 50px;
+    line-height: 1;
+  }
+
+}
 @media only screen and (min-width:1180px){
   .site-header{
     padding-bottom: 54px;

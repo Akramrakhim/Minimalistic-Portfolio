@@ -28,24 +28,37 @@
   </div>
 </header>
 
-
-
+<!-- MAIN-CONTENT -->
 <main class="main-content">
-  <div class="container">
-    <a class="cta-button" href="#">
-      <span class="cta-button__inner">
-        <span class="cta-button__append">
-          <svg xmlns="http://www.w3.org/2000/svg" width="16.447" height="13.006" fill="none"><path stroke="currentColor" d="m.22 8.44 8 4 8-4"/><path stroke="currentColor" d="m.22 4.44 8 4 8-4" opacity=".5" style="mix-blend-mode:normal"/><path stroke="currentColor" d="m.22.44 8 4 8-4" opacity=".25" style="mix-blend-mode:normal"/></svg>
+<div class="hero">
+  <div class="hero__container container">
+    <picture class="hero__picture">
+      <source srcset="img/hero-img-tablet.jpeg 1x, img/hero-img-tablet@2x.jpeg 2x" media="(min-width:500px)">
+      <source srcset="img/hero-img-desktop.jpeg 1x, img/hero-img-desktop@2x.jpeg 2x" media="(max-width:1024px)">
+      <img class="hero__img" src="img/hero-img.jpeg" alt="Hero image" width="311" height="271" srcset="img/hero-img.jpeg 1x, img/hero-img@2x.jpeg 2x">
+    </picture>
+
+    <div class="hero__text-wrapper">
+      <h1 class="hero__heading">Hey, I’m Alex Spencer and I love building beautiful websites</h1>
+  
+      <a class="cta-button" href="#">
+        <span class="cta-button__inner">
+          <span class="cta-button__append">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16.447" height="13.006" fill="none"><path stroke="currentColor" d="m.22 8.44 8 4 8-4"/><path stroke="currentColor" d="m.22 4.44 8 4 8-4" opacity=".5" style="mix-blend-mode:normal"/><path stroke="currentColor" d="m.22.44 8 4 8-4" opacity=".25" style="mix-blend-mode:normal"/></svg>
+          </span>
+          <span class="cta-button__text">About me</span>
         </span>
-        <span class="cta-button__text">About me</span>
-      </span>
-    </a>
+      </a>
+
+    </div>
+    </div>
+  </div>
+  </main>
+<!-- 
 <hr>
     <a href="#" class="button">Go to portfolio</a>
-    <button class="button" type="button">View project</button>
+    <button class="button" type="button">View project</button> -->
 
-  </div>
-</main>
 
 
 <footer class="site-footer">
