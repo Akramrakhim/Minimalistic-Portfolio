@@ -269,6 +269,11 @@ select:-webkit-autofill:focus {
   border-bottom: 1px solid rgba(51, 50, 61, 0.15);
 }
 
+.img-text-info--index-about .img-text-info__info{
+  padding-top: 32px;
+  padding-bottom: 50px;
+}
+
 .img-text-info__title {
   margin-top: 0;
   margin-bottom: 24px;
@@ -276,6 +281,10 @@ select:-webkit-autofill:focus {
   font-size: 40px;
   line-height: 42px;
   letter-spacing: -0.36px;
+}
+
+.img-text-info--index-about .img-text-info__title{
+  margin-bottom: 28px;
 }
 
 .img-text-info__description {
@@ -400,7 +409,6 @@ select:-webkit-autofill:focus {
   color: var(--grey-blue);
 }
 
-
 /* SITE FOOTER */
 .site-footer {
   padding-top: 56px;
@@ -480,12 +488,22 @@ only screen and (                min-resolution: 2dppx) {
     align-items: center;
   }
 
+  .img-text-info--index-about{
+    align-items: stretch;
+  }
+
   .img-text-info:nth-child(even){
     flex-direction: row-reverse;
   }
   
   .img-text-info__img{
     margin-bottom: 0;
+  }
+
+  .img-text-info--index-about .img-text-info__img{
+    height: 100%;
+    object-fit: cover;
+    object-position: right bottom;
   }
   
   .img-text-info__info{
@@ -605,7 +623,7 @@ only screen and (                min-resolution: 2dppx) {
   .hero__heading{
     margin-bottom: 48px;
   }
-  
+
   .img-text-info__picture{
     flex-shrink: 0;
   }
@@ -617,8 +635,15 @@ only screen and (                min-resolution: 2dppx) {
     height: 315px;
     object-fit: cover;
   }
+
+  .img-text-info--index-about .img-text-info__img{
+    width: 281px;
+  }
   
-  .img-text-info__info{
+  .img-text-info--index-about .img-text-info__info{
+    padding-top: 50px;
+  } 
+    .img-text-info__info{
     flex-grow: 1;
     width: auto;
     margin-left: 69px;
@@ -634,6 +659,10 @@ only screen and (                min-resolution: 2dppx) {
 
   .img-text-info__description {
     margin-bottom: 35px;
+  }
+
+  .img-text-info--index-about .img-text-info__description {
+    margin-bottom: 24px;
   }
 }
 
@@ -652,6 +681,12 @@ only screen and (                min-resolution: 2dppx) {
     font-size: 50px;
     line-height: 1;
   }
+
+  .img-text-info--index-about .img-text-info__img{
+    width: 540px;
+    height: 600px;
+  }
+
 
 }
 @media only screen and (min-width:1180px){
