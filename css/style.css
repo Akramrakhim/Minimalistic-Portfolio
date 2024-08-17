@@ -234,6 +234,7 @@ select:-webkit-autofill:focus {
   border:1px solid var(--grey-blue);
   background-color: transparent;
   color: var(--grey-blue);
+  white-space: nowrap;
   cursor: pointer;
 }
 
@@ -295,6 +296,15 @@ select:-webkit-autofill:focus {
   line-height: 2;
 }
 
+/* IMG-TEXT-INFO-LIST */
+.img-text-info-list{
+  padding: 0;
+  margin: 0;
+}
+
+.img-text-info-list__item:not(:last-child){
+  margin-bottom: 72px;
+}
 
 
 /* SITENAV */
@@ -408,6 +418,33 @@ select:-webkit-autofill:focus {
   letter-spacing: -0.36px;
   color: var(--grey-blue);
 }
+
+/* COTACT-CTA */
+.contact-cta {
+  padding-top: 115px;
+  padding-bottom: 80px;
+}
+
+.contact-cta--portfolio-index{
+  padding-top: 80px;
+}
+
+.contact-cta__container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-cta__heading {
+  order: -1;
+  margin-top: 0;
+  margin-bottom: 40px;
+  font-family: var(--accent-font-family);
+  font-size: 40px;
+  line-height: 42px;
+  letter-spacing: -0.36px;
+}
+
 
 /* SITE FOOTER */
 .site-footer {
@@ -554,8 +591,6 @@ only screen and (                min-resolution: 2dppx) {
   }
 }
 
-
-
 @media only screen and (min-width:768px){
   .container{
     padding-left: 40px;
@@ -624,6 +659,10 @@ only screen and (                min-resolution: 2dppx) {
     margin-bottom: 48px;
   }
 
+  .img-text-info-list__item:not(:last-child){
+    margin-bottom: 80px;
+  }
+  
   .img-text-info__picture{
     flex-shrink: 0;
   }
@@ -648,6 +687,7 @@ only screen and (                min-resolution: 2dppx) {
     width: auto;
     margin-left: 69px;
   }
+
   .img-text-info:nth-child(even) .img-text-info__info{
     margin-left: 0;
     margin-right: 69px;
@@ -664,6 +704,36 @@ only screen and (                min-resolution: 2dppx) {
   .img-text-info--index-about .img-text-info__description {
     margin-bottom: 24px;
   }
+
+  .contact-cta{
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+
+  .contact-cta__container{
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .contact-cta__container::before{
+    flex-grow: 1;
+    width: 113px;
+    height: 1px;
+    margin-right: 32px;
+    margin-left: 32px;
+    background-color: var(--grey-blue);
+    opacity: 0.15;
+    content: "";
+  }
+  
+
+  .contact-cta__heading{
+    width: 100%;
+    max-width: 350px;
+    margin-bottom: 0;
+  }
+
+
 }
 
 @media only screen and (min-width:1024px){
@@ -687,6 +757,10 @@ only screen and (                min-resolution: 2dppx) {
     height: 600px;
   }
 
+  .contact-cta{
+    padding-top: 150px;
+    padding-bottom: 150px;
+  }
 
 }
 @media only screen and (min-width:1180px){
