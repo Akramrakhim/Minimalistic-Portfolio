@@ -278,6 +278,10 @@ select:-webkit-autofill:focus {
   opacity: 0.6;
 }
 
+.socials-dark .socials-link{
+  color: var(--grey-blue);
+}
+
 .socials-icon{
   display: block;
 }
