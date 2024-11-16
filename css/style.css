@@ -271,7 +271,7 @@ select:-webkit-autofill:focus {
 }
 
 .socials-link:hover {
-  opacity: 0.8;
+  color: var(--green);
 }
 
 .socials-link:active {
@@ -280,6 +280,10 @@ select:-webkit-autofill:focus {
 
 .socials-dark .socials-link{
   color: var(--grey-blue);
+}
+
+.socials-dark .socials-link:hover{
+  color: var(--green);
 }
 
 .socials-icon{
