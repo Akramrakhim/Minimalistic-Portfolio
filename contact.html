@@ -19,9 +19,9 @@
         <!-- SITENAV -->
         <nav class="site-header__sitenav sitenav sitenav--site-header">
           <ul class="sitenav__list">
-            <li class="sitenav__item sitenav__item--active"><a href="index.html" class="sitenav__link">HOME</a></li>
+            <li class="sitenav__item"><a href="index.html" class="sitenav__link">HOME</a></li>
             <li class="sitenav__item"><a href="portfolio.html" class="sitenav__link">PORTFOLIO</a></li>
-            <li class="sitenav__item"><a href="contact.html" class="sitenav__link">CONTACT ME</a></li>
+            <li class="sitenav__item sitenav__item--active"><a href="contact.html" class="sitenav__link">CONTACT ME</a></li>
           </ul>
         </nav>
     <button class="site-header__toggler" type="button" aria-label="Menu"></button>
@@ -72,10 +72,11 @@
           <div class="form__group">
             <label class="form__label" for="email-input">Email Address</label>
             <input class="form__field" type="email" name="email" id="email-input" placeholder="email@example.com" required>
+            <div class="form__error-message">Please enter valid email.</div>
           </div>
           <div class="form__group">
             <label class="form__label" for="message-field">Message</label>
-            <textarea class="form__field form__field--textarea" name="Message" id="message-field" placeholder="How can I help?" required></textarea>
+            <textarea class="form__field form__field--textarea" name="message" id="message-field" placeholder="How can I help?" required></textarea>
           </div>
           <div class="form__group">
             <button class="solid-button" type="submit">Send message</button>
